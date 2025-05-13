@@ -1,0 +1,12 @@
+from datetime import datetime
+date_time_obj = datetime(2019, 4, 16, 9, 30, 15)
+print(date_time_obj)
+date_time_obj2 = datetime.today()
+print(date_ti   me_obj2)
+print(date_time_obj2.year)
+print(datetime.now())
+now = datetime.now()
+form_date_time = now.strftime("%d %b %Y %I:%M:%S")
+form_date_time2 = now.strftime("%d %m %Y %H:%M:%S")
+print(form_date_time)
+print(form_date_time2)
