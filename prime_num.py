@@ -1,7 +1,11 @@
-a = int(input("Enter the number: "))
-temp = 2
-if (a % temp != 0):
-    if (a % 1 == 0 and a % a == 0):
-        print(a, "is a prime number")
+a = input("Plpease enter a number: ")
+a = int(a)
+posb = 0
+for i in range(1, a+1):
+    if (a % i == 0):
+        posb = posb + 1
+        continue
+if posb <= 2:
+    print("Prime number")
 else:
-    print(a, "is not a prime number")
+    print("Not a prime number")
